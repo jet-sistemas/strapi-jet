@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_compartilhado_texto_ricos",
+  "info": {
+    "displayName": "Texto Rico"
+  },
+  "options": {},
+  "attributes": {
+    "corpo": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

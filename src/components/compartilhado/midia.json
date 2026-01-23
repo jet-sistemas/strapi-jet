@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_compartilhado_midias",
+  "info": {
+    "displayName": "Midia",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "arquivo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

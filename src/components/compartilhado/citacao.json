@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_compartilhado_citacaos",
+  "info": {
+    "displayName": "Citacao"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "corpo": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

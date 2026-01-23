@@ -1,8 +1,9 @@
-import type { StrapiApp } from '@strapi/strapi/admin';
+import type { StrapiApp } from "@strapi/strapi/admin";
 
 export default {
   config: {
     locales: [
+      "pt-BR",
       // 'ar',
       // 'fr',
       // 'cs',
@@ -18,7 +19,6 @@ export default {
       // 'nl',
       // 'no',
       // 'pl',
-      // 'pt-BR',
       // 'pt',
       // 'ru',
       // 'sk',
