@@ -583,6 +583,34 @@ export interface ApiCategoriaCategoria extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiTestandoTestando extends Struct.SingleTypeSchema {
+  collectionName: 'testandos';
+  info: {
+    displayName: 'testando';
+    pluralName: 'testandos';
+    singularName: 'testando';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    hora_publicacao: Schema.Attribute.DateTime;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::testando.testando'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -1097,6 +1125,7 @@ declare module '@strapi/strapi' {
       'api::artigo.artigo': ApiArtigoArtigo;
       'api::autor.autor': ApiAutorAutor;
       'api::categoria.categoria': ApiCategoriaCategoria;
+      'api::testando.testando': ApiTestandoTestando;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

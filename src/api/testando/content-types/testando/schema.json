@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "testandos",
+  "info": {
+    "singularName": "testando",
+    "pluralName": "testandos",
+    "displayName": "testando"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hora_publicacao": {
+      "type": "datetime"
+    }
+  }
+}
