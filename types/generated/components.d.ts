@@ -3,13 +3,10 @@ import type { Schema, Struct } from '@strapi/strapi';
 export interface CompartilhadoCarrosel extends Struct.ComponentSchema {
   collectionName: 'components_compartilhado_carrosels';
   info: {
-    displayName: 'Carrosel';
+    displayName: 'Carrossel';
   };
   attributes: {
-    arquivos: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    >;
+    arquivos: Schema.Attribute.Media<'images', true>;
   };
 }
 

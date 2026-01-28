@@ -1,7 +1,7 @@
 {
   "collectionName": "components_compartilhado_carrosels",
   "info": {
-    "displayName": "Carrosel"
+    "displayName": "Carrossel"
   },
   "options": {},
   "attributes": {
@@ -9,10 +9,7 @@
       "type": "media",
       "multiple": true,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ]
     }
   },
