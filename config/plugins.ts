@@ -1,5 +1,4 @@
 module.exports = ({ env }) => ({
-  // ...
   upload: {
     config: {
       provider: "strapi-provider-cloudflare-r2",
@@ -34,5 +33,22 @@ module.exports = ({ env }) => ({
       },
     },
   },
-  // ...
+  email: {
+    config: {
+      provider: 'nodemailer',
+      providerOptions: {
+        host: env('SMTP_HOST', 'smtp.ethereal.email'),
+        port: env('SMTP_PORT', 587),
+        secure: env('SMTP_SECURE', false),
+        auth: {
+          user: env('SMTP_USERNAME', 'hello@example.com'),
+          pass: env('SMTP_PASSWORD', 'password'),
+        },
+      },
+      settings: {
+        defaultFrom: env('SMTP_FROM', 'hello@example.com'),
+        defaultReplyTo: env('SMTP_REPLY_TO', 'hello@example.com'),
+      },
+    },
+  }
 });
