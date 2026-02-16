@@ -40,6 +40,10 @@ module.exports = ({ env }) => ({
         host: env('SMTP_HOST', 'smtp.ethereal.email'),
         port: env('SMTP_PORT', 587),
         secure: env('SMTP_SECURE', false),
+        connectionTimeout: 10000, // 10 segundos
+        greetingTimeout: 10000, // 10 segundos
+        debug: env('SMTP_DEBUG', false),
+        logger: env('SMTP_LOGGER', false),
         auth: {
           user: env('SMTP_USERNAME', 'hello@example.com'),
           pass: env('SMTP_PASSWORD', 'password'),
