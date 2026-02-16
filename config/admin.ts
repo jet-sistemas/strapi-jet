@@ -52,8 +52,7 @@ Equipe`,
         <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width: 520px; background: #ffffff; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -2px rgba(0,0,0,0.06); overflow: hidden;">
           <tr>
             <td style="padding: 40px 40px 24px 40px; text-align: center; background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%); border-bottom: 1px solid #e2e8f0;">
-              ${logoUrl ? `<img src="${logoUrl}" alt="Logo da associação" width="160" height="auto" style="display: block; margin: 0 auto; max-height: 64px; object-fit: contain;" />` : ''}
-              <h1 style="margin: ${logoUrl ? '24px' : '0'} 0 0 0; font-size: 22px; font-weight: 700; color: #0f172a;">Redefinição de senha</h1>
+              <h1 style="margin: 24px 0 0 0; font-size: 22px; font-weight: 700; color: #0f172a;">Redefinição de senha</h1>
               <p style="margin: 8px 0 0 0; font-size: 15px; color: #64748b;">Painel administrativo</p>
             </td>
           </tr>
@@ -63,7 +62,7 @@ Equipe`,
               <p style="margin: 0 0 24px 0; font-size: 15px; color: #475569;">Recebemos sua solicitação para redefinir a senha de acesso ao painel. Clique no botão abaixo para criar uma nova senha de forma segura.</p>
               <table role="presentation" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
                 <tr>
-                  <td style="border-radius: 10px; background-color: ${primaryColor};">
+                  <td style="border-radius: 10px; background-color: #050469;">
                     <a href="<%= url %>" target="_blank" style="display: inline-block; padding: 14px 32px; font-size: 16px; font-weight: 600; color: #ffffff !important; text-decoration: none;">Definir nova senha</a>
                   </td>
                 </tr>
