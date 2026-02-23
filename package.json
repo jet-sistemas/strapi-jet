@@ -17,12 +17,14 @@
   "dependencies": {
     "@strapi/plugin-cloud": "5.33.4",
     "@strapi/plugin-users-permissions": "5.33.4",
+    "@strapi/provider-email-nodemailer": "^5.36.0",
     "@strapi/strapi": "5.33.4",
     "pg": "8.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
     "strapi-provider-cloudflare-r2": "^0.3.0",
+    "strapi-provider-email-resend": "^1.0.4",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {

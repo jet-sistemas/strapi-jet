@@ -1,5 +1,4 @@
 module.exports = ({ env }) => ({
-  // ...
   upload: {
     config: {
       provider: "strapi-provider-cloudflare-r2",
@@ -34,5 +33,40 @@ module.exports = ({ env }) => ({
       },
     },
   },
-  // ...
+  email: {
+    // GMAIL
+    // config: {
+    //   provider: 'nodemailer',
+    //   providerOptions: {
+    //     host: env('SMTP_HOST', 'smtp.ethereal.email'),
+    //     port: env('SMTP_PORT', 587),
+    //     secure: env('SMTP_SECURE', false),
+    //     connectionTimeout: 10000, // 10 segundos
+    //     greetingTimeout: 10000, // 10 segundos
+    //     debug: env.bool('SMTP_DEBUG', false),
+    //     logger: env.bool('SMTP_LOGGER', false),
+    //     auth: {
+    //       user: env('SMTP_USERNAME', 'hello@example.com'),
+    //       pass: env('SMTP_PASSWORD', 'password'),
+    //     },
+    //   },
+    //   settings: {
+    //     defaultFrom: env('SMTP_FROM', 'hello@example.com'),
+    //     defaultReplyTo: env('SMTP_REPLY_TO', 'hello@example.com'),
+    //   },
+    // },
+
+    // RESEND
+    config: {
+      provider: "strapi-provider-email-resend",
+      providerOptions: {
+        apiKey: env("RESEND_API_KEY"), // Required
+      },
+      settings: {
+        defaultFrom: env("RESEND_DEFAULT_EMAIL"),
+        defaultReplyTo: env("RESEND_USER_EMAIL"),
+      },
+    },
+  }
 });
+
